@@ -7,14 +7,14 @@
 
 final class User {
     let id: Int
-    let name: String
-    let iconUrl: String
-    let webURL: String
+    let login: String
+    let avatar_url: String
+    let html_url: String
     
     init(attributes: [String:Any]) {
         id = attributes["id"] as! Int
-        name = attributes["name"] as! String
-        iconUrl = attributes["iconUrl"] as! String
-        webURL = attributes["webURL"] as! String
+        login = attributes["login"] as! String
+        avatar_url = attributes["avatar_url"] as! String
+        html_url = attributes["html_url"] as! String
     }
 }
